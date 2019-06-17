@@ -15,7 +15,7 @@ export default {
   name: 'Card',
   data () {
     return {
-      msg: 'This is a card'
+      Card
     }
   }
 }

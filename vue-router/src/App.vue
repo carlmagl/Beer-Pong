@@ -1,33 +1,23 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-<<<<<<< HEAD
+    <Header/>
     <HelloWorld/>
     <Card/>
-=======
     <homepage/>
->>>>>>> 1a014aad157fcf8fd7023c120128fffa21bf0b34
   </div>
 </template>
 
 <script>
-<<<<<<< HEAD
 import HelloWorld from './components/HelloWorld'
 import Card from './components/Card'
-
-=======
 import homepage from './components/homepage'
->>>>>>> 1a014aad157fcf8fd7023c120128fffa21bf0b34
+import Header from './components/Header'
 
 export default {
   name: 'App',
   components: {
-<<<<<<< HEAD
-    HelloWorld,
-    Card
-=======
-    homepage
->>>>>>> 1a014aad157fcf8fd7023c120128fffa21bf0b34
+    homepage,
+    Header
   }
 }
 </script>
@@ -39,11 +29,11 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  padding: 0;
 }
+
 *{
   margin: 0;
-  padding: 0;
 }
 
 </style>
