@@ -5,7 +5,7 @@
 </div>
 <div class="card-content">
     <div class="teamName"><h1>Lagnavn</h1></div>
-    <div class="teamMembers"><h3>'Filip og Carl'</h3></div>
+    <div class="teamMembers"><h3>Filip og Carl</h3></div>
 </div>
 </div>
 </template>
@@ -24,20 +24,30 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
   .card{
-    height: 50%;
-    width: 50%;
+    height: 30%;
+    width: 30%;
     margin: 0;
     padding: 0; 
     border: 5px solid red  ;
+  }
+  .card-img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
   .team-img{
     max-width: 100%;
     height: auto;
   }
-
-  h1,h3{
+  .card-content h1, h3{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 300;
     align-content: center;
     color: red;
   }
+
+  
 
 </style>
