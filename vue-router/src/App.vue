@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
+    <Header/>
     <HelloWorld/>
     <Card v-bind:Card="Card"/>
     <homepage/>
@@ -11,13 +11,13 @@
 import HelloWorld from './components/HelloWorld'
 import Card from './components/Card'
 import homepage from './components/homepage'
+import Header from './components/Header'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld,
-    Card,
-    homepage
+    homepage,
+    Header
   }
 }
 </script>
@@ -29,11 +29,11 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  padding: 0;
 }
+
 *{
   margin: 0;
-  padding: 0;
 }
 
 </style>
