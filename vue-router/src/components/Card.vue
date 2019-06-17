@@ -1,21 +1,20 @@
 <template>
-<div class="Root">    
-<div class="card" v-for="card in List">
+<div class="card">
 <div class="card-img">
-    <img class="team-img" src='http://2.bp.blogspot.com/-L_vBOvPOMtk/TsrU1EOBpWI/AAAAAAAAAfQ/uHIa7_9oGdM/s1600/Thomas%2BNumme.jpg' alt="Card image cap"/>
+    <img class="team-img" v-bind:src='card.url' alt="Card image cap"/>
 </div>
 <div class="card-content">
-    <div class="teamName"><h1>{{List.teamName}}</h1></div>
-    <div class="teamMembers"><h3>{{List.teamMembers}}</h3></div>
-</div>
+    <div class="teamName"><h1>{{card.title}}</h1></div>
+    <div class="teamMembers"><h3>{{card.members}}</h3></div>
 </div>
 </div>
 </template>
 
 <script>
+
 export default {
   name: 'Card' ,
-  props: ["Card"],
+  props:['card'],
   data () { 
     return {
       Card
